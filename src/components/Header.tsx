@@ -21,22 +21,22 @@ const LogoImage = (
 const DesktopNav = (
     <nav className="hidden md:flex space-x-6">
         <Link href="/" passHref>
-            <Button variant="ghost" className="hover:text-red-500">Home</Button>
+            <Button variant="ghost" className="hover:text-red-500 text-lg">Home</Button>
         </Link>
         <Link href="/about" passHref>
-            <Button variant="ghost" className="hover:text-green-500">About</Button>
+            <Button variant="ghost" className="hover:text-green-500 text-lg">About</Button>
         </Link>
         <Link href="/services" passHref>
-            <Button variant="ghost" className="hover:text-blue-500">Services</Button>
+            <Button variant="ghost" className="hover:text-blue-500 text-lg" >Services</Button>
         </Link>
         <Link href="/blog" passHref>
-            <Button variant="ghost" className="hover:text-yellow-500">Blog</Button>
+            <Button variant="ghost" className="hover:text-yellow-500 text-lg">Blog</Button>
         </Link>
         <Link href="/solutions-showcase" passHref>
-            <Button variant="ghost" className="hover:text-purple-500">Solutions Showcase</Button>
+            <Button variant="ghost" className="hover:text-purple-500 text-lg">Solutions Showcase</Button>
         </Link>
         <Link href="/contact" passHref>
-            <Button variant="ghost" className="hover:text-orange-500">Contact</Button>
+            <Button variant="ghost" className="hover:text-orange-500 text-lg">Contact</Button>
         </Link>
     </nav>
 );
@@ -83,14 +83,14 @@ const navItems = [
 function SidebarNav({ isMobileMenuOpen, closeMobileMenu }: SidebarNavProps) {
     return (
         <nav
-            className={`fixed top-0 left-0 w-64 h-full bg-white z-20 shadow-lg transform transition-transform duration-300 ease-in-out ${
+            className={`fixed top-0 left-0 w-64 h-full  z-20 shadow-lg transform transition-transform duration-300 ease-in-out ${
                 isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
             }`}
         >
             <div className="p-4 flex flex-col space-y-4">
                 {navItems.map((item) => (
                     <Link key={item.path} href={item.path} passHref>
-                        <Button variant="ghost" className={item.hoverColor} onClick={closeMobileMenu}>
+                        <Button variant="ghost" className={`${item.hoverColor} text-lg`} onClick={closeMobileMenu}>
                             {item.label}
                         </Button>
                     </Link>
