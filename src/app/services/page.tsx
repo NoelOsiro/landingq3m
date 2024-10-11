@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import AnimatedSection from '@/components/animated-section'
+import Testimonials from '@/components/Testimonials'
 
 export const metadata: Metadata = {
   title: 'Our Services - Q3M Wanda Solutions',
@@ -70,6 +71,7 @@ export default function ServicesPage() {
           </AnimatedSection>
         ))}
       </div>
+      <Testimonials />
     </div>
   )
 }

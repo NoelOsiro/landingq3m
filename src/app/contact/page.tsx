@@ -87,16 +87,16 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <p>
                   <strong>Address:</strong><br />
-                  123 Tech Plaza, Suite 400<br />
-                  San Francisco, CA 94105
+                  Festive Mall, 2nd Floor<br />
+                  Malindi Kilifi, Kenya
                 </p>
                 <p>
                   <strong>Phone:</strong><br />
-                  +1 (555) 123-4567
+                  +254 (701) 360-581
                 </p>
                 <p>
                   <strong>Email:</strong><br />
-                  info@q3mwandasolutions.com
+                  info@q3mwandasolutions.tech
                 </p>
                 <p>
                   <strong>Business Hours:</strong><br />

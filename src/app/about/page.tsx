@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import AnimatedSection from '@/components/animated-section'
+import Team from '@/components/Team'
 
 export const metadata: Metadata = {
   title: 'About Q3M Wanda Solutions - Our Story and Mission',
@@ -55,6 +56,7 @@ export default function AboutPage() {
           </div>
         </div>
       </AnimatedSection>
+      <Team />
     </div>
   )
 }

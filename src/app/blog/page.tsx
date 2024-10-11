@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 async function getBlogPosts() {
   return await client.fetch(`
-    *[_type == "post"] | order(publishedAt desc) {
+    *[_type == "posts"] | order(publishedAt desc) {
       _id,
       title,
       slug,
