@@ -1,10 +1,11 @@
 import React from 'react'
+import Image from 'next/image'
 import AnimatedSection from './animated-section'
 
-const Welcome = () => {
-  // Picsum provides a URL that serves random images every time
-  const randomImageUrl = 'https://picsum.photos/800/600'
+// Picsum provides a URL that serves random images every time
+const randomImageUrl = 'https://picsum.photos/800/600'
 
+const Welcome = () => {
   return (
     <AnimatedSection>
       <div className='flex lg:h-[600px]'>
@@ -23,18 +24,18 @@ const Welcome = () => {
             </div>
           </div>
         </div>
+        
         <div
-          className="hidden lg:block lg:w-1/2"
+          className="hidden lg:block lg:w-1/2 relative h-full"
           style={{ clipPath: 'polygon(10% 0, 100% 0%, 100% 100%, 0 100%)' }}
         >
-          <div
-            className="h-full object-cover"
-            style={{
-              backgroundImage: `url(${randomImageUrl})`,
-            }}
-          >
-            <div className="h-full bg-black opacity-25"></div>
-          </div>
+          <Image
+            src={randomImageUrl}
+            alt="Random Image"
+            fill
+            className="rounded-lg object-cover"
+          />
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-25"></div>
         </div>
       </div>
     </AnimatedSection>
