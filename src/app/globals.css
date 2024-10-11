@@ -17,7 +17,7 @@ body {
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
     --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
+    --card-foreground: 220 60% 23.53%;
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
     --primary: 220.9 39.3% 11%;
@@ -41,10 +41,10 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 224 71.4% 4.1%;
+    --background: 220.91 39.29% 10.98%;
     --foreground: 210 20% 98%;
     --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
+    --card-foreground: 161.13 80.41% 46.78%;
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 20% 98%;
     --primary: 210 20% 98%;
