@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
+
 import Navbar from "@/components/Header";
 import { GA_TRACKING_ID } from "@/lib/gtag";
 import Footer from "@/components/footer";
@@ -62,6 +66,8 @@ export default function RootLayout({
             <Footer/>
           </div>
         </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
