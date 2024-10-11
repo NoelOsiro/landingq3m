@@ -1,6 +1,7 @@
 import React from 'react'
 import AnimatedSection from './animated-section'
 import { SectionTitle } from './SectionTitle';
+import OptimizedImage from './optimized-image';
 
 
 const features = [
@@ -46,14 +47,27 @@ function ImageOverlay() {
             /* Overlay Image */
         }
         <div className="absolute bottom-0 right-0 bg-blue-500 w-4/6 md:w-3/6 lg:w-4/6 overflow-hidden flex flex-col justify-center rounded-xl group-hover:bg-sky-600 transition-all shadow-2xl">
-            <img src="https://picsum.photos/800/800" alt="" className="w-full h-full object-cover" />
+        <OptimizedImage
+            src="https://picsum.photos/800/800"
+            alt=""
+            className="w-full h-full object-cover"
+            width={800}
+            height={800}
+        />
+
         </div>
 
         {
             /* Main Image */
         }
         <div className="h-64 md:h-2/3 rounded-xl overflow-hidden">
-            <img src="https://picsum.photos/800/800" className="w-full h-full object-cover" alt="" />
+        <OptimizedImage
+            src="https://picsum.photos/800/800"
+            alt=""
+            className="w-full h-full object-cover"
+            width={800}
+            height={800}
+        />
         </div>
 
         {

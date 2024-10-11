@@ -1,5 +1,6 @@
 import React from 'react'
 import AnimatedSection from './animated-section'
+import OptimizedImage from './optimized-image'
 
 const Team = () => {
   return (
@@ -11,7 +12,13 @@ const Team = () => {
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-16 xl:grid-cols-4">
         <div className="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
-            <img className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" />
+            <OptimizedImage
+                className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300"
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt=""
+                width={128}
+                height={128}
+            />
 
             <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white">arthur melo</h1>
 
@@ -39,7 +46,13 @@ const Team = () => {
         </div>
 
         <div className="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
-            <img className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
+            <OptimizedImage
+                className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300"
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt=""
+                width={128}
+                height={128}
+            />
 
             <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white">Amelia. Anderson</h1>
 
@@ -67,7 +80,13 @@ const Team = () => {
         </div>
 
         <div className="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
-            <img className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
+            <OptimizedImage
+                className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300"
+                src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt=""
+                width={128}
+                height={128}
+            />
 
             <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white">Olivia Wathan</h1>
 
@@ -95,7 +114,13 @@ const Team = () => {
         </div>
 
         <div className="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
-            <img className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" />
+            <OptimizedImage
+                className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300"
+                src="https://images.unsplash.com/photo-1510021789-413b1d8c1133?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+                alt=""
+                width={128}
+                height={128}
+            />
 
             <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white">John Doe</h1>
 
@@ -123,7 +148,13 @@ const Team = () => {
         </div>
 
         <div className="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
-            <img className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
+            <OptimizedImage
+                className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300"
+                src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt=""
+                width={128}
+                height={128}
+            />
 
             <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white">Mia</h1>
 
@@ -151,7 +182,13 @@ const Team = () => {
         </div>
 
         <div className="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
-            <img className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1608174386344-80898cec6beb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+            <OptimizedImage
+                className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300"
+                src="https://images.unsplash.com/photo-1608174386344-80898cec6beb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt=""
+                width={128}
+                height={128}
+            />
 
             <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white">Junior REIS</h1>
 
@@ -179,7 +216,13 @@ const Team = () => {
         </div>
 
         <div className="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
-            <img className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+            <OptimizedImage
+                className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt=""
+                width={128}
+                height={128}
+            />
 
             <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white">Joseph Gonzalez</h1>
 
@@ -207,8 +250,13 @@ const Team = () => {
         </div>
 
         <div className="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
-            <img className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1521488741203-dcc320950ce5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
-
+            <OptimizedImage
+                className="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300"
+                src="https://images.unsplash.com/photo-1521488741203-dcc320950ce5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt=""
+                width={128}
+                height={128}
+            />
             <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white">Emma Doe</h1>
 
             <p className="mt-2 capitalize text-gray-500 group-hover:text-gray-300 dark:text-gray-300">Content Writer</p>
