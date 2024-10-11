@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import AnimatedSection from '@/components/animated-section'
 import PageTransition from '@/components/page-transition'
-
 import { Button } from '@/components/ui/button'
 import { client } from '@/sanity/lib/client'
 import { urlFor } from '@/sanity/lib/image'
+import { PortableText } from '@portabletext/react'
 
 export const metadata: Metadata = {
   title: 'Blog - Q3M Wanda Solutions',
@@ -41,7 +42,6 @@ export default async function BlogPage() {
         </AnimatedSection>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
           {blogPosts.map((post: any, index: number) => (
             <AnimatedSection key={post._id} delay={0.1 * (index + 1)}>
               <Card>
@@ -55,8 +55,9 @@ export default async function BlogPage() {
                     />
                   </div>
                   <CardTitle>{post.title}</CardTitle>
-                  
-                    <CardDescription>{post.body.slice(0, 100)}...</CardDescription>
+                  <CardDescription>
+                    <PortableText value={post.body.slice(0, 100)} />
+                  </CardDescription>
                 </CardHeader>
                 <div className="px-6 pb-6">
                   <p className="text-sm text-muted-foreground mb-4">
