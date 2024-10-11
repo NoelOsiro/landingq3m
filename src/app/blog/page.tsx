@@ -50,9 +50,8 @@ export default async function BlogPage() {
                     <Image
                       src={urlFor(post.mainImage).url()}
                       alt={post.title}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-t-lg"
+                      fill
+                      className="rounded-t-lg object-cover"
                     />
                   </div>
                   <CardTitle>{post.title}</CardTitle>
