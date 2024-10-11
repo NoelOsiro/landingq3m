@@ -5,10 +5,10 @@ import OptimizedImage from './optimized-image';
 
 
 const features = [
-    { name: 'Service', href: '', icon: 'check' },
-    { name: 'Installation', href: '', icon: 'check' },
-    { name: 'Gold Membership', href: '', icon: 'check' },
-    { name: 'Maintenance', href: '', icon: 'check' },
+    { name: 'Interoperability', href: '', icon: 'check' },
+    { name: 'Telco-Agnostic', href: '', icon: 'check' },
+    { name: 'Sub-Wallets', href: '', icon: 'check' },
+    { name: 'Loose Change', href: '', icon: 'check' },
 ];
 
 const FeatureGrid = () => {
@@ -31,10 +31,10 @@ const FeatureGrid = () => {
 const ProductTextSection = () => {
     return (
         <div className="p-6 md:pl-12">
-            <h2 className="text-3xl md:text-5xl font-medium mb-6">Cost-Effective Heating and Air Conditioning</h2>
-            <h3 className="text-xl md:text-2xl font-medium mb-6">Creating the perfect temperature all year round</h3>
-            <p className="mb-6 text-gray-400">Energy efficient, stylish & silent both providing cooling and heating. At Zero Degree AC Limited we only use the best brands.</p>
-            <h3 className="mb-4 font-semibold text-lg md:text-xl text-gray-400">Conditioning Installation Packages</h3>
+            <h2 className="text-3xl md:text-5xl font-medium mb-6">Postapay Digital Payment Platform</h2>
+            <h3 className="text-xl md:text-2xl font-medium mb-6">Unlocking Opportunities For People And Businesses</h3>
+            <p className="mb-6 text-gray-400">PostaPay ensures seamless connectivity across different platforms including financial institutions, fitness and retail outlets among others.</p>
+            <h3 className="mb-4 font-semibold text-lg md:text-xl text-gray-400">Seamless & Secure Financial Solutions</h3>
             <FeatureGrid />
         </div>
     );
@@ -74,7 +74,7 @@ function ImageOverlay() {
             /* Rotated Text */
         }
         <a className="-rotate-90 font-bold mt-2 mb-8 gap-2 h-16 text-xl md:text-2xl leading-7" href="">
-            <span>25 ans <br /> D&apos;expérience</span>
+            <span>Digital <br /> Transformation</span>
         </a>
 
         {

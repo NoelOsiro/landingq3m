@@ -16,13 +16,13 @@ export const metadata: Metadata = {
 
 async function getBlogPosts() {
   return await client.fetch(`
-    *[_type == "posts"] | order(publishedAt desc) {
+    *[_type == "post"] | order(publishedAt desc) {
       _id,
       title,
       slug,
       mainImage,
       publishedAt,
-      excerpt
+      body,
     }
   `)
 }
@@ -56,7 +56,8 @@ export default async function BlogPage() {
                     />
                   </div>
                   <CardTitle>{post.title}</CardTitle>
-                  <CardDescription>{post.excerpt}</CardDescription>
+                  
+                    <CardDescription>{post.body.slice(0, 100)}...</CardDescription>
                 </CardHeader>
                 <div className="px-6 pb-6">
                   <p className="text-sm text-muted-foreground mb-4">

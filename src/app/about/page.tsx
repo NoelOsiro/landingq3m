@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
-import Image from 'next/image'
+import logo from '@/assets/images/logo.png'
 import AnimatedSection from '@/components/animated-section'
 import Team from '@/components/Team'
+import OptimizedImage from '@/components/optimized-image'
 
 export const metadata: Metadata = {
   title: 'About Q3M Wanda Solutions - Our Story and Mission',
@@ -27,11 +28,12 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="relative h-[300px] rounded-lg overflow-hidden">
-            <Image
-              src="/placeholder.svg?height=300&width=400"
-              alt="Q3M Wanda Solutions Team"
-              layout="fill"
-              objectFit="cover"
+            <OptimizedImage
+              src={logo.src}
+              alt="Our Mission"
+              width={600}
+              height={400}
+              className='object-cover rounded-lg'
             />
           </div>
         </div>
