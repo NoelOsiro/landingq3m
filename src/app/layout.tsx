@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Header";
 import { GA_TRACKING_ID } from "@/lib/gtag";
+import Footer from "@/components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -58,11 +59,7 @@ export default function RootLayout({
           <div className="flex flex-col min-h-screen">
             <Navbar/>
             <main className="flex-grow">{children}</main>
-            <footer className="border-t">
-              <div className="container mx-auto px-4 py-6 text-center">
-                © {new Date().getFullYear()} Q3M Wanda Solutions. All rights reserved.
-              </div>
-            </footer>
+            <Footer/>
           </div>
         </ThemeProvider>
       </body>
