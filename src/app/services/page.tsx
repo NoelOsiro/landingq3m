@@ -55,7 +55,9 @@ export default function ServicesPage() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <AnimatedSection key={service.title} delay={0.1 * (index + 1)}>
-            <Card>
+            <Card
+              className="hover:transform hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out"
+            >
               <CardHeader>
                 <CardTitle>{service.title}</CardTitle>
                 <CardDescription>{service.description}</CardDescription>

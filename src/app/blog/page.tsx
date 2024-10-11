@@ -44,30 +44,47 @@ export default async function BlogPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post: any, index: number) => (
             <AnimatedSection key={post._id} delay={0.1 * (index + 1)}>
-              <Card>
-                <CardHeader>
-                  <div className="relative w-full h-48 mb-4">
-                    <Image
-                      src={urlFor(post.mainImage).url()}
-                      alt={post.title}
-                      fill
-                      className="rounded-t-lg object-cover"
-                    />
+              <Link href={`/blog/${post.slug.current}`} passHref>
+                <Card
+                  className="hover:cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out"
+                >
+                  <CardHeader>
+                    <div className="relative w-full h-48 mb-4">
+                      <Image
+                        src={urlFor(post.mainImage).url()}
+                        alt={post.title}
+                        fill
+                        className="rounded-t-lg object-cover"
+                      />
+                    </div>
+                    <CardTitle>{post.title}</CardTitle>
+                    <CardDescription>
+                      <PortableText
+                        value={post.body}
+                        components={{
+                          block: ({ children, index }) =>
+                            index === 0 ? <p>{children}</p> : null,
+                        }}
+                      />
+                      ...
+                    </CardDescription>
+                  </CardHeader>
+                  <div className="px-6 pb-6">
+                    <p className="text-sm text-muted-foreground mb-4">
+                      {new Date(post.publishedAt).toLocaleDateString()}
+                    </p>
+                    {/* Keep Button functional */}
+                    <Link href={`/blog/${post.slug.current}`} passHref>
+                    <Button
+                      variant="outline"
+                      
+                    >
+                      Read More
+                    </Button></Link>
+                    
                   </div>
-                  <CardTitle>{post.title}</CardTitle>
-                  <CardDescription>
-                    <PortableText value={post.body.slice(0, 100)} />
-                  </CardDescription>
-                </CardHeader>
-                <div className="px-6 pb-6">
-                  <p className="text-sm text-muted-foreground mb-4">
-                    {new Date(post.publishedAt).toLocaleDateString()}
-                  </p>
-                  <Link href={`/blog/${post.slug.current}`} passHref>
-                    <Button variant="outline">Read More</Button>
-                  </Link>
-                </div>
-              </Card>
+                </Card>
+              </Link>
             </AnimatedSection>
           ))}
         </div>
