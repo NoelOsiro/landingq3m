@@ -1,6 +1,18 @@
+import Link from 'next/link';
 import React from 'react'
+import Image from 'next/image';
+import logo from "@/assets/images/logo.png"; // Your logo
 
 
+// LogoImage Component
+const LogoImage = (
+    <Link href="/" className="flex items-center space-x-2">
+        <Image src={logo} alt="Q3M Wanda Logo" width={50} height={50} />
+        <span className="text-2xl font-bold">
+            Q3M Wanda<br />Solutions
+        </span>
+    </Link>
+);
 
 const Footer = () => {
   return (
@@ -27,6 +39,7 @@ const Footer = () => {
             </div>
         </div>
 
+
         <div>
             <p className="font-semibold text-gray-800 dark:text-white">Industries</p>
 
@@ -41,7 +54,7 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 dark:border-gray-700 md:my-8" />
 
         <div className="flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">Brand</a>
+        {LogoImage}
 
         <div className="-mx-2 flex">
             <a href="#" className="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit">

@@ -19,7 +19,7 @@ export default function OptimizedImage({ src, alt, width, height, className }: O
         src={src}
         alt={alt}
         fill
-        className={`duration-700 ease-in-out object-cover ${
+        className={`duration-700 ease-in-out object-contain ${
           isLoading ? 'scale-110 blur-2xl grayscale' : 'scale-100 blur-0 grayscale-0'
         }`}
         onLoad={() => setIsLoading(false)}

@@ -18,7 +18,7 @@ const Welcome = () => {
               Empowering businesses with innovative solutions for the challenges of tomorrow.
             </p>
             <div className="flex justify-center lg:justify-start mt-6">
-              <a className="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400" href="#">
+              <a className="px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400" href="#">
                 Learn More
               </a>
             </div>
